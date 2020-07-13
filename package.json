@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
-    "predeploy": "rm -rf dist && parcel build index.html --public-url sumry",
+    "predeploy": "rm -rf dist && parcel build index.html --public-url /sumry",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
