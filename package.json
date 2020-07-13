@@ -8,10 +8,10 @@
     "node": "11.0.0"
   },
   "scripts": {
-    "dev": "parcel src/index.html",
-    "start": "./node_modules/parcel-bundler/bin/cli.js src/index.html",
-    "build": "parcel build src/index.html",
-    "heroku-postbuild": "parcel build src/index.html"
+    "dev": "parcel index.html",
+    "start": "./node_modules/parcel-bundler/bin/cli.js index.html",
+    "build": "parcel build index.html",
+    "heroku-postbuild": "parcel build index.html"
   },
   "keywords": [],
   "author": "",
