@@ -4,9 +4,10 @@
   "description": "your project manager, for you.",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
-    "predeploy": "rm -rf dist && parcel build index.html --public-url /sumry",
-    "deploy": "gh-pages -d dist"
+    "dev": "parcel src/index.html",
+    "start": "./node_modules/parcel-bundler/bin/cli.js src/index.html",
+    "build": "parcel build src/index.html",
+    "heroku-postbuild": "parcel build src/index.html"
   },
   "keywords": [],
   "author": "",
