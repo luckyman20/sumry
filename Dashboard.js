@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import {
   Grid,
-  Paper,
   Card,
   CardHeader,
   Typography,
   CardContent,
+  List,
 } from "@material-ui/core";
 import { Col, Row, Image } from "react-bootstrap";
 import {
@@ -775,6 +775,7 @@ const Dashboard = (props) => {
                 <Card style={{ height: "46vh" }} variant="outlined">
                   <CardHeader title={title} className="cardHeader" />
                   <CardContent>
+                    <List style={{maxHeight: '100%', overflow: 'auto'}}>
                     {linkList.length === 0 ? (
                       <Typography variant="h2" className="errorText">
                         Nothing to show :(
@@ -789,7 +790,7 @@ const Dashboard = (props) => {
                           link={item.link}
                         />
                       ))
-                    )}
+                    )}</List>
                   </CardContent>
                 </Card>
               </Grid>
