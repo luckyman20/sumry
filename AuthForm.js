@@ -45,12 +45,12 @@ const AuthForm = () => {
         >
           <Form.Group controlId="formUsername">
             <Form.Label>Username</Form.Label>
-            <Form.Control placeholder="Enter username" />
+            <Form.Control placeholder="Enter username as 'hmg65' (without quotes)" />
           </Form.Group>
 
           <Form.Group controlId="formPassword">
             <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
+            <Form.Control type="password" placeholder="Enter Password  as 'code@123' (without quotes)" />
           </Form.Group>
 
           <Form.Group controlId="formRememberMe">
